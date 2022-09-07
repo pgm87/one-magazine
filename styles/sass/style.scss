@@ -1,28 +1,8 @@
 @use "partials/setup" as *;
 @use "partials/variables" as *;
+@use "partials/mixins" as *;
+@use "partials/globalStylings" as *;
 
-
-@mixin fontStyling($type: $primaryFont, $size, $weight: normal, $color: $black) {
-    font-family: $type;
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-}
-
-@mixin imgDivContainer($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-@mixin buttonStyles($color) {
-    @include fontStyling($primaryFont, 0.8rem, 600, $white);
-    radius: 0%;
-    padding: 10px;
-    text-transform: uppercase;
-    background-color: $color;
-    border: none;
-    line-height: 29px;
-}
 
 .wrapper {
     max-width: 1500px;
@@ -30,70 +10,8 @@
     margin: 0 auto;
 }
 
-// Global stylings
-html {
-    font-size: 125%;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: $white;
-
-    @media (max-width:$mobileWidth) {
-        background-color: $lightGrey;
-    }
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-h3 {
-    @include fontStyling($primaryFont, 1.5rem, 600, $black);
-    text-transform: uppercase;
-    line-height: 29px;
-    margin-top: 0;
-
-    @media(max-width:$mobileWidth) {
-        font-size: 1.5rem;
-        margin-top: 15px;
-    }
-}
-
-p {
-    @include fontStyling($secondaryFont, 1rem, 300);
-    line-height: 29px;
-}
-
-button {
-    @include buttonStyles($sapphire);
-}
-
-h4 {
-    @include fontStyling($primaryFont, 1.5rem, 300);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-
-}
-
-li {
-    text-decoration: none;
-    list-style: none;
-}
-
-i {
-    color: $white;
-}
-
-a {
-    color: $white;
-}
-
-
-// NAV STYLING
+// HEADER STYLING
 header {
     background-image: url(../assets/image-1.jpg);
     background-size: cover;
@@ -283,7 +201,7 @@ header {
 
 }
 
-// SECTION NEW
+// Third Section Styling
 
 .sectionNew {
     display: flex;
@@ -311,6 +229,7 @@ header {
 
 }
 
+// 4th Section Styling
 .sectionNew2 {
     display: flex;
     align-items: center;
@@ -372,7 +291,7 @@ header {
     }
 }
 
-// contact
+// FORM AND CONTACT STYLING
 .formAndContact {
 
     padding: 2rem;
@@ -464,4 +383,9 @@ footer {
     @include fontStyling($secondaryFont, 1rem, lighter, $black );
     text-align: center;
     padding: 0.5rem;
+
+    @media (max-width:$mobileWidth) {
+        max-width: 620px;
+        width: 100%;
+    }
 }

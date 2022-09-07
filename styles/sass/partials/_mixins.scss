@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+@mixin fontStyling($type: $primaryFont, $size, $weight: normal, $color: $black) {
+    font-family: $type;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin imgDivContainer($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin buttonStyles($color) {
+    @include fontStyling($primaryFont, 0.8rem, 600, $white);
+    radius: 0%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: $color;
+    border: none;
+    line-height: 29px;
+}

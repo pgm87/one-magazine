@@ -268,12 +268,6 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 1500px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 html {
   font-size: 125%;
   margin: 0;
@@ -283,7 +277,7 @@ html {
 body {
   background-color: #fcfcfc;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   body {
     background-color: #e3e3e3;
   }
@@ -304,7 +298,7 @@ h3 {
   line-height: 29px;
   margin-top: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   h3 {
     font-size: 1.5rem;
     margin-top: 15px;
@@ -354,6 +348,12 @@ a {
   color: #fcfcfc;
 }
 
+.wrapper {
+  max-width: 1500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   background-image: url(../assets/image-1.jpg);
   background-size: cover;
@@ -361,7 +361,7 @@ header {
   font-family: "Cormorant Garamond", serif;
   position: relative;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header {
     min-height: 100vh;
     display: flex;
@@ -379,12 +379,12 @@ header .topBarPlusLogo .logo {
   color: #fcfcfc;
   font-style: italic;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header .topBarPlusLogo .logo {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header .topBarPlusLogo .topNav {
     display: flex;
   }
@@ -394,7 +394,7 @@ header .topBarPlusLogo .topNav ul {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header .topBarPlusLogo .topNav ul {
     display: none;
   }
@@ -410,7 +410,7 @@ header .topBarPlusLogo .topNav ul li {
 header .topBarPlusLogo .topNav .hamburgerMenu {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header .topBarPlusLogo .topNav .hamburgerMenu {
     display: block;
     background: transparent;
@@ -429,7 +429,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header h1 {
     font-size: 3.5rem;
   }
@@ -444,7 +444,7 @@ header .socialMediaNav {
   justify-content: flex-end;
   padding-bottom: 40px;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   header .socialMediaNav {
     display: none;
   }
@@ -460,7 +460,7 @@ header .socialMediaNav {
   padding: 0;
   margin-top: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .firstSection h2 {
     font-size: 1.8rem;
     margin: 20px 0;
@@ -478,7 +478,7 @@ header .socialMediaNav {
   flex-basis: 30%;
   height: auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .firstSection .gallery ul li {
     flex-basis: 45%;
   }
@@ -491,7 +491,7 @@ header .socialMediaNav {
   display: flex;
   padding: 80px 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .secondSection {
     flex-direction: column;
   }
@@ -500,7 +500,7 @@ header .socialMediaNav {
   margin-right: 40px;
   flex-basis: 30%;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .secondSection .imgBoxSmall {
     margin-right: 0px;
     max-width: 80%;
@@ -513,7 +513,7 @@ header .socialMediaNav {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .secondSection .textBox {
     margin-right: 0px;
     text-align: center;
@@ -522,7 +522,7 @@ header .socialMediaNav {
 .secondSection .textBox button {
   align-self: flex-start;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .secondSection .textBox button {
     margin-right: 0px;
     align-self: center;
@@ -533,7 +533,7 @@ header .socialMediaNav {
   display: flex;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .sectionNew {
     flex-wrap: wrap-reverse;
   }
@@ -544,7 +544,7 @@ header .socialMediaNav {
 .sectionNew .textBoxLarge {
   margin: 0 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .sectionNew .textBoxLarge {
     margin-right: 0px;
     text-align: center;
@@ -556,7 +556,7 @@ header .socialMediaNav {
   display: flex;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .sectionNew2 {
     flex-wrap: wrap;
   }
@@ -567,7 +567,7 @@ header .socialMediaNav {
 .sectionNew2 .textBoxLarge {
   margin: 0 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .sectionNew2 .textBoxLarge {
     text-align: center;
     margin: 30px auto;
@@ -589,7 +589,7 @@ header .socialMediaNav {
   justify-content: space-evenly;
   margin-top: 5%;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .otherLinks ul {
     flex-direction: column;
     align-items: center;
@@ -612,7 +612,7 @@ header .socialMediaNav {
   justify-content: space-between;
   background-color: #e3e3e3;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .formAndContact {
     flex-direction: column;
   }
@@ -621,7 +621,7 @@ header .socialMediaNav {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .formAndContact .form {
     align-items: center;
   }
@@ -629,7 +629,7 @@ header .socialMediaNav {
 .formAndContact .form .inputSubscribe {
   display: flex;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .formAndContact .form .inputSubscribe {
     flex-direction: column;
   }
@@ -647,7 +647,7 @@ header .socialMediaNav {
   line-height: 29px;
   flex-basis: 25%;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .formAndContact .form .inputSubscribe button {
     margin-top: 20px;
   }
@@ -703,4 +703,10 @@ footer {
   color: #000000;
   text-align: center;
   padding: 0.5rem;
+}
+@media (max-width: 650px) {
+  footer {
+    max-width: 620px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
