@@ -99,6 +99,7 @@ header {
     background-size: cover;
     color: $white;
     font-family: $primaryFont;
+    position: relative;
 
     @media (max-width:$mobileWidth) {
         min-height: 100vh;
@@ -121,13 +122,17 @@ header {
 
         .topNav {
             @media (max-width:$mobileWidth) {
-                display: none;
+                display: flex;
             }
 
             ul {
                 text-transform: uppercase;
                 display: flex;
                 justify-content: flex-end;
+
+                @media (max-width:$mobileWidth) {
+                    display: none;
+                }
 
                 li {
 
@@ -136,6 +141,19 @@ header {
                     font-weight: lighter;
                 }
             }
+
+            .hamburgerMenu {
+                display: none;
+
+                @media(max-width:$mobileWidth) {
+                    display: block;
+                    background: transparent;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
         }
 
 

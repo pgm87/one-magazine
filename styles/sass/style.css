@@ -359,6 +359,7 @@ header {
   background-size: cover;
   color: #fcfcfc;
   font-family: "Cormorant Garamond", serif;
+  position: relative;
 }
 @media (max-width: 800px) {
   header {
@@ -385,13 +386,18 @@ header .topBarPlusLogo .logo {
 }
 @media (max-width: 800px) {
   header .topBarPlusLogo .topNav {
-    display: none;
+    display: flex;
   }
 }
 header .topBarPlusLogo .topNav ul {
   text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 800px) {
+  header .topBarPlusLogo .topNav ul {
+    display: none;
+  }
 }
 header .topBarPlusLogo .topNav ul li {
   font-family: "Roboto", sans-serif;
@@ -400,6 +406,18 @@ header .topBarPlusLogo .topNav ul li {
   color: #fcfcfc;
   margin: 0 10px;
   font-weight: lighter;
+}
+header .topBarPlusLogo .topNav .hamburgerMenu {
+  display: none;
+}
+@media (max-width: 800px) {
+  header .topBarPlusLogo .topNav .hamburgerMenu {
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 header h1 {
   font-size: 7.5rem;
